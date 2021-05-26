@@ -1,0 +1,69 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="5d8ea024fe991c1c15688146" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="5d8ea024fe991c1c15688146_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="AparatosSet" EntityType="5d8ea024fe991c1c15688146.Aparatos" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="HistorialSet" EntityType="5d8ea024fe991c1c15688146.Historial" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="HistorialPrestamoAparatos" Association="5d8ea024fe991c1c15688146.HistorialPrestamoAparatos" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="HistorialSet" Role="FromRole_HistorialPrestamoAparatos"/>
+                    <End EntitySet="AparatosSet" Role="ToRole_HistorialPrestamoAparatos"/>
+                </AssociationSet>
+                <EntitySet Name="estudiantesSet" EntityType="5d8ea024fe991c1c15688146.estudiantes" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+            </EntityContainer>
+            <EntityType Name="Aparatos">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombre"/>
+                <Property Name="Cantidad" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cantidad"/>
+                <Property Name="CantidadP" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CantidadP"/>
+                <Property Name="Imagen" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Imagen"/>
+            </EntityType>
+            <EntityType Name="Historial">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Equipo" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Equipo"/>
+                <Property Name="FechaInicio" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="FechaInicio"/>
+                <Property Name="FechaFin" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="FechaFin"/>
+                <Property Name="Cantidad" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cantidad"/>
+                <Property Name="Estado" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Estado"/>
+                <Property Name="___FK_8913a2700bb8c54715699fe3_00009" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_8913a2700bb8c54715699fe3_00009"/>
+                <Property Name="TipoEstado" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TipoEstado"/>
+                <NavigationProperty Name="Prestamo" Relationship="5d8ea024fe991c1c15688146.HistorialPrestamoAparatos" FromRole="FromRole_HistorialPrestamoAparatos" ToRole="ToRole_HistorialPrestamoAparatos"/>
+            </EntityType>
+            <Association Name="HistorialPrestamoAparatos">
+                <End Type="5d8ea024fe991c1c15688146.Historial" Multiplicity="1" Role="FromRole_HistorialPrestamoAparatos"/>
+                <End Type="5d8ea024fe991c1c15688146.Aparatos" Multiplicity="1" Role="ToRole_HistorialPrestamoAparatos"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_HistorialPrestamoAparatos">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_HistorialPrestamoAparatos">
+                        <PropertyRef Name="___FK_8913a2700bb8c54715699fe3_00009"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="estudiantes" sap:pdm-semantics="business-data">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombre"/>
+                <Property Name="Apellido" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Apellido"/>
+                <Property Name="Edad" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Edad"/>
+                <Property Name="Genero" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Genero"/>
+                <Property Name="Direccion" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Direccion"/>
+                <Property Name="FechaNacimiento" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="FechaNacimiento"/>
+                <Property Name="Usuario" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Usuario"/>
+                <Property Name="Contrasenia" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Contrasenia"/>
+                <Property Name="NombreAcudiente" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="NombreAcudiente"/>
+                <Property Name="ApellidoAcudiente" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="NombreAcudiente1"/>
+                <Property Name="CelularAcudiente" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="NombreAcudiente1"/>
+                <Property Name="CorreoAcudiente" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="NombreAcudiente1"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

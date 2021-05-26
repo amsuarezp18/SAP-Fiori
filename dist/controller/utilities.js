@@ -1,0 +1,1 @@
+sap.ui.define(["./utilities"],function(){"use strict";return{getDefaultValuesForPage5:function(){return{ID:"id-"+Date.now().toString(),Nombre:"",Apellido:"",Edad:"",Genero:"",Direccion:"",FechaNacimiento:null,Usuario:"",Contrasenia:"",NombreAcudiente:"",ApellidoAcudiente:"",CelularAcudiente:"",CorreoAcudiente:""}}}});
