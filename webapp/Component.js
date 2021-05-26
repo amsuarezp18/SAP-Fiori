@@ -44,7 +44,7 @@ sap.ui.define([
 
 			// set the dataSource model
 			this.setModel(new sap.ui.model.json.JSONModel({
-				"uri": "/here/goes/your/serviceUrl/local/"
+				"uri": "/sap/opu/odata/sap/SEPMRA_PROD_MAN/"
 			}), "dataSource");
 
 			// set application model
