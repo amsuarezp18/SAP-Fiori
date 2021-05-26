@@ -95,7 +95,7 @@
 				"controlAggregation": "pages",
 				"bypassed": {
 					"target": [
-						"Page1"
+						"Page3"
 					]
 				}
 			},
