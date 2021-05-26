@@ -100,6 +100,13 @@
 				}
 			},
 			"targets": {
+				"Page3": {
+					"controlAggregation": "pages",
+					"viewName": "Page3",
+					"viewId": "Page3",
+					"viewLevel": 1,
+					"transition": "slide"
+				},
 				"Page1": {
 					"controlAggregation": "pages",
 					"viewName": "Page1",
@@ -112,13 +119,6 @@
 					"viewName": "Page2",
 					"viewId": "Page2",
 					"viewLevel": 2,
-					"transition": "slide"
-				},
-				"Page3": {
-					"controlAggregation": "pages",
-					"viewName": "Page3",
-					"viewId": "Page3",
-					"viewLevel": 1,
 					"transition": "slide"
 				},
 				"Page4": {
@@ -176,7 +176,7 @@
 					"pattern": "",
 					"name": "default",
 					"target": [
-						"Page1"
+						"Page3"
 					]
 				},
 				{
