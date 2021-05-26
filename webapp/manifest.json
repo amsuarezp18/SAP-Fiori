@@ -10,7 +10,7 @@
 		},
 		"dataSources": {
 			"local": {
-				"uri": "/sap/opu/odata/sap/SEPMRA_PROD_MAN/",
+				"uri": "/here/goes/your/serviceUrl/local/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
@@ -95,18 +95,11 @@
 				"controlAggregation": "pages",
 				"bypassed": {
 					"target": [
-						"Page3"
+						"Page1"
 					]
 				}
 			},
 			"targets": {
-				"Page3": {
-					"controlAggregation": "pages",
-					"viewName": "Page3",
-					"viewId": "Page3",
-					"viewLevel": 1,
-					"transition": "slide"
-				},
 				"Page1": {
 					"controlAggregation": "pages",
 					"viewName": "Page1",
@@ -121,11 +114,18 @@
 					"viewLevel": 2,
 					"transition": "slide"
 				},
+				"Page3": {
+					"controlAggregation": "pages",
+					"viewName": "Page3",
+					"viewId": "Page3",
+					"viewLevel": 1,
+					"transition": "slide"
+				},
 				"Page4": {
 					"controlAggregation": "pages",
 					"viewName": "Page4",
 					"viewId": "Page4",
-					"viewLevel": 5,
+					"viewLevel": 9,
 					"transition": "slide"
 				},
 				"Page5": {
@@ -139,28 +139,28 @@
 					"controlAggregation": "pages",
 					"viewName": "Page6",
 					"viewId": "Page6",
-					"viewLevel": 7,
+					"viewLevel": 6,
 					"transition": "slide"
 				},
 				"Page7": {
 					"controlAggregation": "pages",
 					"viewName": "Page7",
 					"viewId": "Page7",
-					"viewLevel": 8,
+					"viewLevel": 7,
 					"transition": "slide"
 				},
 				"Page9": {
 					"controlAggregation": "pages",
 					"viewName": "Page9",
 					"viewId": "Page9",
-					"viewLevel": 6,
+					"viewLevel": 5,
 					"transition": "slide"
 				},
 				"Page10": {
 					"controlAggregation": "pages",
 					"viewName": "Page10",
 					"viewId": "Page10",
-					"viewLevel": 9,
+					"viewLevel": 8,
 					"transition": "slide"
 				}
 			},
@@ -176,7 +176,7 @@
 					"pattern": "",
 					"name": "default",
 					"target": [
-						"Page3"
+						"Page1"
 					]
 				},
 				{

@@ -114,6 +114,20 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			}
 
 		},
+		_onButtonPress1: function(oEvent) {
+
+			var oBindingContext = oEvent.getSource().getBindingContext();
+
+			return new Promise(function(fnResolve) {
+
+				this.doNavigate("Page1", oBindingContext, fnResolve, "");
+			}.bind(this)).catch(function(err) {
+				if (err !== undefined) {
+					MessageBox.error(err.message);
+				}
+			});
+
+		},
 		onInit: function() {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.oRouter.getTarget("Page3").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));

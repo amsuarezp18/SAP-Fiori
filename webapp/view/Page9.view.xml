@@ -58,13 +58,13 @@
                             </Column>
                             <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
                                 <header>
-                                    <Text text="Estado préstamo" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                    <Text text="Equipo" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
                                 </header>
                                 <footer/>
                             </Column>
                             <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
                                 <header>
-                                    <Text text="Equipo" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                    <Text text="Estado del equipo" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
                                 </header>
                                 <footer/>
                             </Column>
@@ -76,8 +76,8 @@
                                     <Text text="{FechaInicio}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
                                     <Text text="{FechaFin}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
                                     <Text text="{Cantidad}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
-                                    <Text text="{Estado}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
                                     <Image src="{Prestamo/Imagen}" height="auto" width="50px" visible="true" densityAware="false"/>
+                                    <ObjectStatus title="" text="{Estado}" state="{TipoEstado}" visible="true"/>
                                 </cells>
                             </ColumnListItem>
                         </items>

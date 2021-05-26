@@ -114,6 +114,20 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			}
 
 		},
+		_onButtonPress1: function(oEvent) {
+
+			var oBindingContext = oEvent.getSource().getBindingContext();
+
+			return new Promise(function(fnResolve) {
+
+				this.doNavigate("Page3", oBindingContext, fnResolve, "");
+			}.bind(this)).catch(function(err) {
+				if (err !== undefined) {
+					MessageBox.error(err.message);
+				}
+			});
+
+		},
 		_onGenericTilePress: function(oEvent) {
 
 			var oBindingContext = oEvent.getSource().getBindingContext();

@@ -31,6 +31,7 @@
                 <Property Name="Cantidad" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cantidad"/>
                 <Property Name="Estado" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Estado"/>
                 <Property Name="___FK_8913a2700bb8c54715699fe3_00009" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_8913a2700bb8c54715699fe3_00009"/>
+                <Property Name="TipoEstado" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TipoEstado"/>
                 <NavigationProperty Name="Prestamo" Relationship="5d8ea024fe991c1c15688146.HistorialPrestamoAparatos" FromRole="FromRole_HistorialPrestamoAparatos" ToRole="ToRole_HistorialPrestamoAparatos"/>
             </EntityType>
             <Association Name="HistorialPrestamoAparatos">

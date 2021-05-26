@@ -1,7 +1,7 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page5" xmlns="sap.m">
     <Page showHeader="true" title="Menú principal" showFooter="true" showNavButton="false">
         <content>
-            <HBox alignItems="Center" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+            <HBox alignItems="Center" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="SpaceBetween" renderType="Div" visible="true" displayInline="false">
                 <items>
                     <Image src="/webapp/resources/Captura_de_pantalla_de_2021-05-19_20-24-38-removebg-preview.png" height="220px" width="220px" visible="true" densityAware="false" class="sapUiMediumMargin"/>
                     <VBox alignItems="Center" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Center" renderType="Div" visible="true" displayInline="false">
@@ -25,6 +25,7 @@
                     <HBox alignItems="End" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="End" renderType="Div" visible="true" displayInline="false" class="sapUiLargeMarginBegin">
                         <items>
                             <Button text="Editar perfil" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                            <Button text="Log out" type="Default" icon="sap-icon://journey-depart" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" class="sapUiMediumMarginBegin sapUiMediumMarginEnd" press="_onButtonPress1"/>
                         </items>
                         <layoutData/>
                     </HBox>

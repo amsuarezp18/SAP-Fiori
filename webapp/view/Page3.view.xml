@@ -14,6 +14,7 @@
                     <HBox alignItems="Center" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Center" renderType="Div" visible="true" displayInline="false" class="sapUiLargeMargin">
                         <items>
                             <Button text="Login" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" class="sapUiLargeMargin" press="_onButtonPress"/>
+                            <Button text="Crear cuenta" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
                         </items>
                         <layoutData/>
                     </HBox>
