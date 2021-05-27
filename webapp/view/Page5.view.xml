@@ -3,7 +3,7 @@
         <content>
             <HBox alignItems="Center" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="SpaceBetween" renderType="Div" visible="true" displayInline="false">
                 <items>
-                    <Image src="/webapp/resources/Captura_de_pantalla_de_2021-05-19_20-24-38-removebg-preview.png" height="220px" width="220px" visible="true" densityAware="false" class="sapUiMediumMargin"/>
+                    <Image src="https://workspaces-ws-55vrg-theia.us10.trial.applicationstudio.cloud.sap/files/download/?id=a720a8a7-bd38-4b9f-a55b-341840dcc358" height="220px" width="220px" visible="true" densityAware="false" class="sapUiMediumMargin"/>
                     <VBox alignItems="Center" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Center" renderType="Div" visible="true" displayInline="false">
                         <items>
                             <Title text="Información" titleStyle="H3" width="auto" textAlign="Begin" visible="true" wrapping="false"/>

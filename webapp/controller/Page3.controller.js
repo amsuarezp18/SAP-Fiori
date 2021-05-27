@@ -1,6 +1,6 @@
 sap.ui.define(["sap/ui/core/mvc/Controller",
 	"sap/m/MessageBox",
-	"./utilities",
+    "./utilities",
 	"sap/ui/core/routing/History"
 ], function(BaseController, MessageBox, Utilities, History) {
 	"use strict";
@@ -12,7 +12,8 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			var oParams = {};
 
 			if (oEvent.mParameters.data.context) {
-				this.sContext = oEvent.mParameters.data.context;
+                this.sContext = oEvent.mParameters.data.context;
+               
 
 			} else {
 				if (this.getOwnerComponent().getComponentData()) {
@@ -42,7 +43,8 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 					path: "/" + this.sContext,
 					parameters: oParams
 				};
-				this.getView().bindObject(oPath);
+                this.getView().bindObject(oPath);
+               
 			}
 
 		},
